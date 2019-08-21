@@ -1,0 +1,279 @@
+/*中间分类模块开始*/
+.grid {
+	height: 480px;
+}
+.grid-col1 {
+	width: 190px;
+	height: 100%;
+	background-color: #6e6568;
+	color: #fff;
+	font-size: 16px; /*不是给字的 而是给/的*/
+	position: relative;
+}
+.ad {
+	width: 250px;
+	height: 480px;
+	background-color: pink;
+	position: absolute;
+	top: 0;
+	left: -250px;
+}
+.ad:hover .ad-r {
+	width: 990px;
+	/*鼠标经过ad这个大盒子时,盒子ad-r宽度由0变为990*/
+}
+.ad-r {
+	position: absolute;
+	top: 0;
+	left: 250px;
+	z-index: 999;
+	width: 0;
+	height: 480px;
+	transition: all 0.8s;
+	background: url(../images/ad-r.jpg);
+	/*这个盒子做动作,所以给它添加过渡*/
+}
+.grid-col1 a {
+	color: #fff;
+	font-size: 14px;
+	margin: 0 -1px;
+
+}
+.grid-col1 a:hover{
+	color: #f10215;
+}
+.grid-col1 ul {
+	padding: 10px 0px;
+}
+.grid-col1 ul li {
+	padding-left: 12px;
+	height: 29px;
+	line-height: 26px;
+}
+.grid-col1 ul li:hover {
+	background-color: #9c9698;
+}
+.grid-col2 {
+	width: 790px;
+	height: 100%;
+	margin-left: 10px;
+}
+/*banner部分*/
+.grad-col2-b div {
+	float: left;
+	margin-top: 10px;
+}
+.grad-col2-b div:last-child {
+	float: right;
+	margin-top: 10px;
+}
+/*箭头部分*/
+.grad-col2-t {
+	position: relative;
+}
+.arrow-l,
+.arrow-r {
+	position: absolute;
+	top: 50%;
+	width: 30px;
+	height: 60px;
+	background-color: rgba(0,0,0,0.3);
+	transform: translateY(-50%);
+	text-align: center;
+	line-height: 60px;
+	font-size: 20px;
+	color: rgba(255,255,255,0.6);
+	font-family: arial;
+	font-weight: normal;
+	}
+.arrow-r {
+	right: 0;
+}
+.ciecle {
+	width: 167px;
+	height: 20px;
+	position: absolute;
+	background-color: rgba(255,255,255,0.3);
+	left: 50%;
+	bottom: 20px;
+	transform: translateX(-50%);
+	border-radius: 10px;
+	padding-left: 8px;
+}
+.ciecle li {
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	border-radius: 50%;
+	float: left;
+	margin: 4px;
+	cursor: pointer;   /*鼠标经过变成小手*/
+}
+.ciecle .current {
+	background-color: #f10215;
+}
+.grid-col3 {
+	width: 190px;
+	height: 100%;
+}
+/*右边模块*/
+.login {
+	height: 85px;
+	border-bottom: 1px solid #ccc;
+	background-color: #fff;
+	padding: 15px;
+}
+.login-t {
+	width: 95px;
+	height: 60px;
+	line-height: 20px;
+	font-size: 12px;
+	white-space: nowrap; /*强制一行内显示*/
+	overflow: hidden; /*溢出部分隐藏*/
+	text-overflow: ellipsis;  /*超出的部分显示省略号*/
+	color: #666;
+	padding-left: 60px;
+	position: relative;
+}
+.login-t a {
+	color: #666;
+}
+.login-t a:hover {
+	color: #f10215;
+}
+.login-b a {
+	display: inline-block;
+	width: 70px;
+	height: 20px;
+	line-height: 20px;
+	border: 2px solid #f10215;
+	margin-right: 3px;
+	text-align: center;
+	color: #f10215;
+}
+.login-b a:hover {
+	color: #fff;
+	background-color: #f10215;
+}
+.user-info {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background:url(../images/sprite_userinfo@1x.png) no-repeat -70px 0;
+}
+.user-info img {
+	width: 40px;
+	margin: 5px;
+	border-radius: 50%;
+}
+
+.news {
+	height: 155px;
+	border-bottom: 1px solid #ccc;
+	background-color: #fff;
+	padding:7px 13px 0px;
+	box-sizing: border-box;
+}
+.news-t {
+	height: 19px;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+.news-t a {
+	float: left;
+	height: 17px;
+	line-height: 17px;
+}
+.cuxiao {
+	width: 38px;
+	border-right: 1px solid #ccc;
+}
+.gg {
+	margin-left: 15px;
+}
+.news-t .more {
+	float: right;
+}
+.news-t div {
+	width: 28px;
+	height: 2px;
+	background-color: #f10215;
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+}
+.news-b {
+	padding-top: 15px;
+}
+.news-b li {
+	height: 23px;
+	line-height: 23px;
+}
+.news-b a {
+
+}
+.expand {
+	height: 208px;
+	background-color: #fff;
+	overflow: hidden;
+}
+.expand ul {
+	width: 195px;
+}
+.expand li {
+	width: 47px;
+	height: 69px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	float: left;
+}
+.expand li i {
+	display: block;
+	margin: 0px auto;
+	margin-bottom: 10px;
+	background:url(../images/sprite_fs@1x.png) no-repeat 0px -88px;
+	width: 25px;
+	height: 25px;
+}
+
+.expand li:nth-child(2) i {
+	background-position:0px -44px; 
+}
+.expand li:nth-child(3) i {
+	background-position:-44px -88px; 
+}
+.expand li:nth-child(4) i {
+	background-position:-88px 0px; 
+}
+.expand li:nth-child(5) i {
+	background-position:-88px -44px; 
+}
+.expand li:nth-child(6) i {
+	background-position:0px 0px; 
+}
+.expand li:nth-child(7) i {
+	background-position:-44px -44px; 
+}
+.expand li:nth-child(8) i {
+	background-position:-88px -88px; 
+}
+.expand li:nth-child(9) i {
+	background-position:-132px 0px; 
+}
+.expand li:nth-child(10) i {
+	background-position:-132px -44px; 
+}
+.expand li:nth-child(11) i {
+	background-position:-132px -88px; 
+}
+.expand li:nth-child(12) i {
+	background-position:-44px 0px; 
+}
+
+.expand li a {
+	display: block;
+	padding-top: 15px;
+	text-align: center;
+}
